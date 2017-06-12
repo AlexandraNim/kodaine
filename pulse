@@ -1,0 +1,30 @@
+#include <iostream>
+#include <ctime>
+#include <Windows.h>
+
+using namespace std;
+
+int main()
+{int a, c, f, sec;
+int ch=1;
+switch (ch)
+ case  1:         {
+                cout << "Enter 1 if you ready " << endl;
+                cin>>f;
+                int ch=1;
+                if (f=1)
+                cout << "Start " << endl;
+for(int sec = 0; sec<16; sec++)
+    {
+        system("cls");
+        cout <<"00:" << sec ;;
+        Sleep(970);
+    }
+      cout << " Enter the pulse"<<endl;
+    cin>>a;
+    c=a*4;
+    cout<<"Your pulse is "<<c<<endl;
+    cout<<"Do want to repeat?"<<endl;
+    cin>>ch;}
+            return 0;
+}
